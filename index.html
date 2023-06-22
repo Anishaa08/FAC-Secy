@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Investa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Virtual Investa</h1>
+            <div id="user-login">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button>Login</button>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Stock List</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Buy/Sell</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>Stock List</h2>
+            <ul id="stock-list-items">
+                <li>Apple Inc. (AAPL)</li>
+                <li>Microsoft Corporation (MSFT)</li>
+                <li>Amazon.com, Inc. (AMZN)</li>
+                <li>Alphabet Inc. (GOOGL)</li>
+                <li>Facebook, Inc. (FB)</li>
+            </ul>
+
+            <h2>Portfolio Overview</h2>
+            <div id="portfolio">
+                <ul id="portfolio-items"></ul>
+                <div id="portfolio-profit"></div>
+            </div>
+
+            <h2>Buy/Sell</h2>
+            <form id="buy-sell-form">
+                <label for="stock">Stock:</label>
+                <select id="stock" required>
+                    <option value="">Select a stock</option>
+                    <option value="AAPL">Apple Inc. (AAPL)</option>
+                    <option value="MSFT">Microsoft Corporation (MSFT)</option>
+                    <option value="AMZN">Amazon.com, Inc. (AMZN)</option>
+                    <option value="GOOGL">Alphabet Inc. (GOOGL)</option>
+                    <option value="FB">Facebook, Inc. (FB)</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" required>
+
+                <label for="action">Action:</label>
+                <select id="action" required>
+                    <option value="">Select an action</option>
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2023 Virtual Investa. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

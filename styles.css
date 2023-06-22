@@ -1,0 +1,237 @@
+/* Global Styles */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c9b2b6; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #3a3939;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 5;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#user-login {
+    display: flex;
+    gap: 10px;
+}
+
+/* Navigation Styles */
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Main Section Styles */
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#stock-list-items,
+#portfolio-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#stock-list-items li,
+#portfolio-items li {
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #eae4e4;
+    border-radius: 5px;
+}
+
+#portfolio-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#portfolio-items li .stock-details {
+    font-weight: bold;
+}
+
+#portfolio-profit {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Buy/Sell Form Styles */
+
+#buy-sell-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+#buy-sell-form label {
+    font-weight: bold;
+    color: #fff;
+}
+
+#buy-sell-form select,
+#buy-sell-form input[type="number"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+#buy-sell-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#buy-sell-form button:hover {
+    background-color: #666;
+}
+
+/* Portfolio Section Styles */
+
+#portfolio {
+    background-color: #c5bfc1;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#portfolio h2 {
+    color: #333;
+}
+
+#portfolio-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#portfolio-items li .stock-details {
+    font-weight: bold;
+}
+
+#portfolio-items li .stock-quantity {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#portfolio-profit {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+        font-size: 38px;
+    }
+
+    #user-login {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    #buy-sell-form {
+        gap: 10px;
+    }
+
+    #buy-sell-form input[type="number"],
+    #buy-sell-form select {
+        width: 100%;
+    }
+}
